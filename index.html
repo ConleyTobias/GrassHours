@@ -8,7 +8,6 @@
 
 <nav style="padding: 1px">
     <a href=""><button>Home</button></a>
-    <a href=""><button>Upload</button></a>
     <a href=""><button>Log</button></a>
     <a href=""><button>Users</button></a>
     <a href="" style="float: right"><button><img src="Assets/signin.png" alt="Sign In" style="height: 17px"> Sign In</button></a>
@@ -16,12 +15,57 @@
 
 <body>
     <h1>Grass Hours</h1>
-    <br>
-    <div style="display: flex; align-items: center; justify-content: center;">
+    <div style="display: flex; align-items: center; justify-content: center; height: 100px">
         <p style="font-size: 95px; font-family: Cambria, serif; font-weight: bold" >0</p>
         <img src="Assets/Streak.png" alt="Streak" style="max-width: 100px;" />
     </div>
+    <h1>Leader Board</h1>
+    <div style="display: flex; align-items: center; justify-content: center; height: auto">
+        <button id="Hours">Top Hours</button>
+        <button id="Streak">Top Streak</button>
+    </div>
+
+    <table style="display: flex; align-items: center; justify-content: center; height: auto" id="Leaderboard">
+        <tr>
+            <th>Hours</th>
+            <th>Streak</th>
+            <th>User</th>
+        </tr>
+    </table>
 </body>
+
+<footer style="background-color: black; color: white; font-family: Cambria, serif;">
+
+    <nav>
+        <a href="mailto:conleytobias@outlook.com">Contact Us</a>
+    </nav>
+
+    <a href="https://github.com/ConleyTobias/GrassHours"><img src="Assets/GitHub.png" alt="Github" style="height: 300px;" /><br></a>
+
+    Code & License can be found at the GitHub link above <br><br>
+
+    MIT License
+
+    Copyright (c) 2025 Conley Becker
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+</footer>
 
 </html>
 
@@ -29,4 +73,5 @@
     button {padding: 10px; border-radius: 5px; margin: 5px; font-size: 20px; font-family: "Impact", serif; letter-spacing: 1px; background-color: forestgreen}
     h1 {text-align: center; color: white; font-family: Verdana, serif; font-size: 50px; filter: drop-shadow(1px 1px 1px black);}
     body {background-image: url("Assets/grass.jpg");}
+    table, th, td {border: 1px solid black;}
 </style>
