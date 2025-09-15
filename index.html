@@ -31,6 +31,12 @@
             <th>Streak</th>
             <th>User</th>
         </tr>
+        <tr id = "SortByStreak">
+            <td>Test</td>
+        </tr>
+        <tr id="SortByHours" style="display: none">
+            <td>Test1</td>
+        </tr>
     </table>
 </body>
 
@@ -73,5 +79,18 @@
     button {padding: 10px; border-radius: 5px; margin: 5px; font-size: 20px; font-family: "Impact", serif; letter-spacing: 1px; background-color: forestgreen}
     h1 {text-align: center; color: white; font-family: Verdana, serif; font-size: 50px; filter: drop-shadow(1px 1px 1px black);}
     body {background-image: url("Assets/grass.jpg");}
-    table, th, td {border: 1px solid black;}
+    table, th, td {border: 1px solid black; border-collapse: collapse;}
+    th, td {font-size: 20px; background-color: forestgreen; width: 100px}
 </style>
+
+<script>
+    const text = document.getElementById("SortByHours");
+    const button = document.getElementById('Hours');
+    button.addEventListener('click', function() {
+        if (text.style.display === 'none') {
+            text.style.display = 'inline';
+        } else {
+            text.style.display = 'none';
+        }
+    });
+</script>
