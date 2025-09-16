@@ -84,13 +84,18 @@
 </style>
 
 <script>
-    const text = document.getElementById("SortByHours");
-    const button = document.getElementById('Hours');
-    button.addEventListener('click', function() {
-        if (text.style.display === 'none') {
-            text.style.display = 'inline';
-        } else {
-            text.style.display = 'none';
-        }
+    const StreakLeaderboard = document.getElementById("SortByStreak");
+    const HoursLeaderboard = document.getElementById("SortByHours");
+    const HoursButton = document.getElementById('Hours');
+    const StreakButton = document.getElementById('Streak');
+
+    StreakButton.addEventListener('click', function () {
+        HoursLeaderboard.style.display = 'none';
+        StreakLeaderboard.style.display = 'inline';
+    });
+
+    HoursButton.addEventListener('click', function() {
+        HoursLeaderboard.style.display = 'inline';
+        StreakLeaderboard.style.display = 'none';
     });
 </script>
