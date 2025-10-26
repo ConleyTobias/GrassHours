@@ -1,0 +1,32 @@
+button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: "Impact", serif;
+    letter-spacing: 1px;
+    background-color: forestgreen
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, serif;
+    font-size: 50px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+body {
+    background-image: url("../assets/grass.jpg");
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 20px;
+    background-color: forestgreen;
+    width: 100px
+}

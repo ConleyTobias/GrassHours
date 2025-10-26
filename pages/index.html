@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Grass Hours</title>
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <nav style="padding: 1px">
     <a href=""><button>Home</button></a>
     <a href=""><button>Log</button></a>
     <a href=""><button>Users</button></a>
-    <a href="" style="float: right"><button><img src="Assets/signin.png" alt="Sign In" style="height: 17px"> Sign In</button></a>
+    <a href="" style="float: right"><button><img src="../assets/signin.png" alt="Sign In" style="height: 17px"> Sign In</button></a>
 </nav>
 
 <body>
-    <h1>Grass Hours</h1>
+        <h1>Grass Hours</h1>
     <div style="display: flex; align-items: center; justify-content: center; height: 100px">
         <p style="font-size: 95px; font-family: Cambria, serif; font-weight: bold" >0</p>
-        <img src="Assets/Streak.png" alt="Streak" style="max-width: 100px;" />
+        <img src="../assets/Streak.png" alt="Streak" style="max-width: 100px;" />
     </div>
     <h1>Leader Board</h1>
     <div style="display: flex; align-items: center; justify-content: center; height: auto">
@@ -43,10 +43,10 @@
 <footer style="background-color: black; color: white; font-family: Cambria, serif;">
 
     <nav>
-        <a href="mailto:conleytobias@outlook.com">Contact Us</a>
+        <a href="mailto:conleytobias@outlook.com">Contact Me</a>
     </nav>
 
-    <a href="https://github.com/ConleyTobias/GrassHours"><img src="Assets/GitHub.png" alt="Github" style="height: 300px;" /><br></a>
+    <a href="https://github.com/ConleyTobias/GrassHours"><img src="../assets/GitHub.png" alt="Github" style="height: 300px;" /><br></a>
 
     Code & License can be found at the GitHub link above <br><br>
 
@@ -75,14 +75,6 @@
 
 </html>
 
-<style>
-    button {padding: 10px; border-radius: 5px; margin: 5px; font-size: 20px; font-family: "Impact", serif; letter-spacing: 1px; background-color: forestgreen}
-    h1 {text-align: center; color: white; font-family: Verdana, serif; font-size: 50px; filter: drop-shadow(1px 1px 1px black);}
-    body {background-image: url("Assets/grass.jpg");}
-    table, th, td {border: 1px solid black; border-collapse: collapse;}
-    th, td {font-size: 20px; background-color: forestgreen; width: 100px}
-</style>
-
 <script>
     //Buttons
     const StreakLeaderboard = document.getElementById("SortByStreak");
@@ -101,4 +93,4 @@
     });
 </script>
 
-<script src="API.js"></script>
+<script src="index.js"></script>

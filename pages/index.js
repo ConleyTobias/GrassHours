@@ -1,5 +1,6 @@
 console.log("Starting")
 
+const response = await fetch("https://api.github.com/users").json()
 
 
 //Example
